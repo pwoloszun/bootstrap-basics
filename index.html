@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <script
+    async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5-bbgTNTEP0etxKqYe2aTQyDSdaucH58"
+    type="text/javascript"></script>
+
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <!-- app -->
+  <script src="systemjs.config.js"></script>
+  <script src="systemjs-import-sources.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Bootstrap Basics</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right js-nav">
+      <li><a href="#t01">Fixed grid</a></li>
+      <li><a href="#t02">Fluid grid</a></li>
+      <li><a href="#t03">Responsiveness</a></li>
+      <li><a href="#t04">JS components</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="js-cont"></div>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
